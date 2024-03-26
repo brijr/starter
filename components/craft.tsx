@@ -40,7 +40,7 @@ const Main = ({ children, className, id }: MainProps) => {
         // General Prose
         "prose prose-neutral prose:font-sans dark:prose-invert xl:prose-lg max-w-none",
         // Prose Headings
-        "prose-headings:font-normal prose-headings:mt-0",
+        "prose-headings:font-normal prose-h1:mt-0",
         // Prose Paragraphs
         "prose-p:mb-0",
         // Prose Strong
