@@ -1,4 +1,5 @@
 import { Main, Section, Container } from "@/components/craft";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import Balancer from "react-wrap-balancer";
 
 export default function Home() {
@@ -6,22 +7,6 @@ export default function Home() {
     <Main className="p-12">
       <Section>
         <Container>
-          <h1>
-            <Balancer>Hello World!</Balancer>
-          </h1>
-          <p>
-            Welcome to the{" "}
-            <a href="https://github.com/brijr/craft-starter">Craft Starter</a>{" "}
-            by <a href="https://bridger.to">Bridger Tower</a>. This Next JS
-            template has been set up based on the recommended{" "}
-            <a
-              className="underline"
-              href="https://ui.shadcn.com/docs/installation/next"
-            >
-              Shadcn/ui Next.js setup
-            </a>
-            .
-          </p>
           <ExampleJsx />
         </Container>
       </Section>
@@ -31,7 +16,24 @@ export default function Home() {
 
 const ExampleJsx = () => {
   return (
-    <article>
+    <article className="flex flex-col gap-4">
+      <h1>
+        <Balancer>Hello World!</Balancer>
+      </h1>
+      <p>
+        Welcome to the{" "}
+        <a href="https://github.com/brijr/craft-starter">Craft Starter</a> by{" "}
+        <a href="https://bridger.to">Bridger Tower</a>. This Next JS template
+        has been set up based on the recommended{" "}
+        <a
+          className="underline"
+          href="https://ui.shadcn.com/docs/installation/next"
+        >
+          Shadcn/ui Next.js setup.
+        </a>
+      </p>
+      <ThemeToggle />
+      <hr />
       <h2>Example Heading</h2>
       <p>
         This is an example paragraph to illustrate what an article section might
@@ -63,6 +65,39 @@ function exampleFunction() {
         encourages readers to take the next steps, such as learning more about a
         subject or getting involved in a community discussion.
       </p>
+      <blockquote>
+        This is an example blockquote. It can be used to highlight important
+        information or quotes from other sources.
+      </blockquote>
+      <table>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+          </tr>
+          <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+          </tr>
+        </tbody>
+      </table>
+      <figure>
+        {/* eslint-disable-next-line */}
+        <img
+          src="https://i.pinimg.com/564x/fc/f0/c2/fcf0c274e3f20b0ea3b27a9c04f0269c.jpg"
+          alt="Example Image"
+        />
+        <figcaption>This is an example figure caption.</figcaption>
+      </figure>
     </article>
   );
 };
