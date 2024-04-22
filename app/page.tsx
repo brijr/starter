@@ -21,8 +21,19 @@ const ExampleJsx = () => {
   return (
     <article className="flex flex-col gap-4">
       <h1>
-        <Balancer>Hello World!</Balancer>
+        <Balancer>
+          Hello World, welcome to the Next.js{" "}
+          <a href="https://github.com/brijr/craft">Craft</a> Starter!
+        </Balancer>
       </h1>
+      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrijr%2Fcraft-starter">
+        {/* eslint-disable-next-line */}
+        <img
+          className="not-prose my-4"
+          src="https://vercel.com/button"
+          alt="Deploy with Vercel"
+        />
+      </a>
       <p>
         Welcome to the{" "}
         <a href="https://github.com/brijr/craft-starter">Craft Starter</a> by{" "}
@@ -35,14 +46,6 @@ const ExampleJsx = () => {
           Shadcn/ui Next.js setup.
         </a>
       </p>
-      <div className="flex gap-2">
-        <ThemeToggle />
-        <Button size="icon" variant="outline">
-          <Link href="https://github.com/brijr/craft">
-            <LinkIcon size="18" />
-          </Link>
-        </Button>
-      </div>
       <hr />
       <h2>Example Heading</h2>
       <p>
