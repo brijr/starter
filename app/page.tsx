@@ -1,6 +1,9 @@
 import { Main, Section, Container } from "@/components/craft";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import Balancer from "react-wrap-balancer";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { LinkIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -32,7 +35,14 @@ const ExampleJsx = () => {
           Shadcn/ui Next.js setup.
         </a>
       </p>
-      <ThemeToggle />
+      <div className="flex gap-2">
+        <ThemeToggle />
+        <Button size="icon" variant="outline">
+          <Link href="https://github.com/brijr/craft">
+            <LinkIcon size="18" />
+          </Link>
+        </Button>
+      </div>
       <hr />
       <h2>Example Heading</h2>
       <p>
