@@ -1,9 +1,5 @@
 import { Main, Section, Container } from "@/components/craft";
-import { ThemeToggle } from "@/components/theme/theme-toggle";
 import Balancer from "react-wrap-balancer";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { LinkIcon } from "lucide-react";
 
 export default function Home() {
   return (
