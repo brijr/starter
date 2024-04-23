@@ -61,7 +61,10 @@ const Nav = ({ className, children, id }: NavProps) => {
         id="nav-container"
         className="max-w-5xl mx-auto py-4 px-6 sm:px-8 flex justify-between items-center"
       >
-        <Link className="hover:opacity-75 transition-all" href="/">
+        <Link
+          className="hover:opacity-75 transition-all flex gap-2 items-center"
+          href="/"
+        >
           <h2 className="sr-only">Craft UI</h2>
           <Image
             src={Logo}
@@ -74,10 +77,10 @@ const Nav = ({ className, children, id }: NavProps) => {
         {children}
         <div className="flex items-center gap-2">
           <NavMenu />
-          <Button asChild>
+          <ThemeToggle />
+          <Button asChild className="">
             <Link href="https://9d8.dev">Get Started</Link>
           </Button>
-          <ThemeToggle />
           <MobileNav />
         </div>
       </div>

@@ -3,7 +3,7 @@ import Balancer from "react-wrap-balancer";
 
 export default function Home() {
   return (
-    <Main className="p-12">
+    <Main>
       <Section>
         <Container>
           <ExampleJsx />
@@ -39,8 +39,11 @@ const ExampleJsx = () => {
           className="underline"
           href="https://ui.shadcn.com/docs/installation/next"
         >
-          Shadcn/ui Next.js setup.
+          Shadcn/ui Next.js setup
         </a>
+        . Use this template paired with{" "}
+        <a href="https://components.bridger.to">brijr/components</a> for rapid
+        building.
       </p>
       <hr />
       <h2>Example Heading</h2>
