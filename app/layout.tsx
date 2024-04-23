@@ -78,7 +78,7 @@ const Nav = ({ className, children, id }: NavProps) => {
         <div className="flex items-center gap-2">
           <NavMenu />
           <ThemeToggle />
-          <Button asChild className="">
+          <Button asChild className="hidden sm:flex">
             <Link href="https://9d8.dev">Get Started</Link>
           </Button>
           <MobileNav />
