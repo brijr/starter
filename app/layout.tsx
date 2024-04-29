@@ -69,9 +69,9 @@ const Nav = ({ className, children, id }: NavProps) => {
           <Image
             src={Logo}
             alt="Logo"
-            className="dark:invert"
-            width={72}
-            height={48}
+            className="invert dark:invert-0"
+            width={84}
+            height={30.54}
           ></Image>
         </Link>
         {children}

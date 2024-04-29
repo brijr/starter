@@ -22,7 +22,7 @@ const ExampleJsx = () => {
           <a href="https://github.com/brijr/craft">Craft</a> Starter!
         </Balancer>
       </h1>
-      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrijr%2Fcraft-starter">
+      <a className="h-16" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrijr%2Fcraft-starter">
         {/* eslint-disable-next-line */}
         <img
           className="not-prose my-4"
