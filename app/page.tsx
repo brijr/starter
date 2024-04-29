@@ -15,14 +15,14 @@ export default function Home() {
 
 const ExampleJsx = () => {
   return (
-    <article className="flex flex-col gap-4">
+    <article className="prose-m-none">
       <h1>
         <Balancer>
-          Hello World, welcome to the Next.js{" "}
-          <a href="https://github.com/brijr/craft">Craft</a> Starter!
+          Hello World, welcome to the Next.js and{" "}
+          <a href="https://github.com/brijr/craft">brijr/craft</a> Starter!
         </Balancer>
       </h1>
-      <a className="h-16" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrijr%2Fcraft-starter">
+      <a className="h-16 block" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrijr%2Fcraft-starter">
         {/* eslint-disable-next-line */}
         <img
           className="not-prose my-4"
